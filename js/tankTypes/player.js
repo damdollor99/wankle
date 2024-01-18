@@ -6,7 +6,7 @@ class Piss {
 		this.y = y;
 		this.color = "#FEF600";
 		this.opacity = 1;
-		this.speed = 9000;
+		this.speed = 8000;
 	}
 
 	update() {
@@ -209,7 +209,7 @@ class Player {
 	}
 
 	layMine() {
-		if (this.mineLayed < 2 && this.mineDelay > 10 && !INTERMISSION) {
+		if (this.mineLayed < 10 && this.mineDelay > 10 && !INTERMISSION) {
 			this.tankShock = -0;
 			this.mineLayed++;
 			this.mineDelay = 0;
