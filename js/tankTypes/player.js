@@ -182,7 +182,7 @@ class Player {
 	
 	explode() {
 		//die
-		this.dead = false;
+		this.dead = true;
 		this.tank.explodeTank();
 
 		//start intermission
