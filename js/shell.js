@@ -309,7 +309,7 @@ class Shell {
 
 				switch (this.speed) {
 					case NORMAL_SHELL:
-						if (this.ricochet >= 1) {
+						if (this.ricochet >= 10) {
 							playSound(shellOut);
 						} else {
 							playSound(shellDink);
