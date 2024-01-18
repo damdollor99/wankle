@@ -209,7 +209,7 @@ class Player {
 	}
 
 	layMine() {
-		if (this.mineLayed < 10 && this.mineDelay > 10 && !INTERMISSION) {
+		if (this.mineLayed < 5 && this.mineDelay > 10 && !INTERMISSION) {
 			this.tankShock = -0;
 			this.mineLayed++;
 			this.mineDelay = 0;
