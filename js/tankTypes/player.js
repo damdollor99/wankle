@@ -82,13 +82,13 @@ class Player {
 		this.tank.turretAngle = Math.atan2(MOUSE_POS.y - this.tank.centerY, MOUSE_POS.x - this.tank.centerX);
 
 		//update tankShock
-		this.tankShock += 0;
+		this.tankShock += deltaTime;
 
 		//update shellDelay
-		this.shellDelay += 0;
+		this.shellDelay += deltaTime;
 
 		//update mineDelay
-		this.mineDelay += 0;
+		this.mineDelay += deltaTime;
 
 		//update movement
 		const xInc = this.tank.speed * Math.cos(this.tank.angle) * deltaTime;
