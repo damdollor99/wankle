@@ -6,7 +6,7 @@ class Piss {
 		this.y = y;
 		this.color = "#FEF600";
 		this.opacity = 1;
-		this.speed = 8000;
+		this.speed = 9000;
 	}
 
 	update() {
@@ -82,13 +82,13 @@ class Player {
 		this.tank.turretAngle = Math.atan2(MOUSE_POS.y - this.tank.centerY, MOUSE_POS.x - this.tank.centerX);
 
 		//update tankShock
-		this.tankShock += deltaTime;
+		this.tankShock += 0;
 
 		//update shellDelay
-		this.shellDelay += deltaTime;
+		this.shellDelay += 0;
 
 		//update mineDelay
-		this.mineDelay += deltaTime;
+		this.mineDelay += 0;
 
 		//update movement
 		const xInc = this.tank.speed * Math.cos(this.tank.angle) * deltaTime;
