@@ -6,7 +6,7 @@ class Piss {
 		this.y = y;
 		this.color = "#FEF600";
 		this.opacity = 1;
-		this.speed = 9000;
+		this.speed = 8000;
 	}
 
 	update() {
