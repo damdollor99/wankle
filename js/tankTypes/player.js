@@ -182,12 +182,12 @@ class Player {
 	
 	explode() {
 		//die
-		this.dead = true;
-		this.tank.explodeTank();
+		this.dead = false;
+		
 
 		//start intermission
 		intermissionStatus = INTERMISSION_RETRY;
-		INTERMISSION = true;
+		INTERMISSION = false;
 
 		//add grave
 		if (SETTING_RGB) {
