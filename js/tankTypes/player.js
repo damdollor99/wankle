@@ -6,7 +6,7 @@ class Piss {
 		this.y = y;
 		this.color = "#FEF600";
 		this.opacity = 1;
-		this.speed = 8000;
+		this.speed = 9000;
 	}
 
 	update() {
@@ -199,7 +199,7 @@ class Player {
 
 	shoot() {
 		//delay shell fire rate && cap shell amount && isn't dead
-		if (this.shellDelay > 0 && this.shellShot < 25 && !this.dead && !INTERMISSION) {
+		if (this.shellDelay > 0 && this.shellShot < 15 && !this.dead && !INTERMISSION) {
 			this.tankShock = -0;
 			this.shellShot++;
 			this.shellDelay = 0;
@@ -209,7 +209,7 @@ class Player {
 	}
 
 	layMine() {
-		if (this.mineLayed < 2 && this.mineDelay > 25 && !INTERMISSION) {
+		if (this.mineLayed < 2 && this.mineDelay > 10 && !INTERMISSION) {
 			this.tankShock = -0;
 			this.mineLayed++;
 			this.mineDelay = 0;
