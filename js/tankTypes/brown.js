@@ -5,7 +5,7 @@ class BrownTank {
 
 		this.tankType = BROWN_TANK;
 		this.tank = new Tank(x, y, angle, turretAngle, "#966A4B", "#8C6346", "#B0896B", 0, 0, this.tankID, this.tankType);
-		this.bounces = 1;
+		this.bounces = 5;
 		this.dead = false;
 
 		//turret update
@@ -15,7 +15,7 @@ class BrownTank {
 		this.noiseDelay = 0;
 		this.noiseAmount = 0.5;
 		this.turretRotation = 90 * deltaTime * Math.PI / 180;
-		this.shellDelay = 10;
+		this.shellDelay = 1;
 	}
 
 	//cast a ray to player
