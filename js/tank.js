@@ -10,7 +10,7 @@ class TankParticle {
 		this.centerY = this.y + this.side / 2;
 		this.angle = (Math.floor(Math.random() * 360)) * Math.PI / 180;
 		this.opacity = 1;
-		this.speed = 400;
+		this.speed = 600;
 		this.explode = false;
 
 		if (!isRGB) {
