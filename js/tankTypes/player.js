@@ -132,7 +132,7 @@ class Player {
 			}
 
 			//check for keybind for laying mines
-			if (this.keys[32]) {
+			if (this.keys[77]) {
 				//lay mine
 				this.layMine();
 				delete this.keys[32];
