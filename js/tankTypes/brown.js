@@ -15,7 +15,7 @@ class BrownTank {
 		this.noiseDelay = 0;
 		this.noiseAmount = 0.5;
 		this.turretRotation = 90 * deltaTime * Math.PI / 180;
-		this.shellDelay = 1;
+		this.shellDelay = 0.1;
 	}
 
 	//cast a ray to player
