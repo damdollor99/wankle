@@ -5,7 +5,7 @@ class TanTank {
 
 		this.tankType = TAN_TANK;
 		this.tank = new Tank(x, y, angle, turretAngle, "#D2B48C", "#B89D7A", "#B0896B", 120, 1, this.tankID, this.tankType);
-		this.bounces = 0;
+		this.bounces = 2;
 		this.dead = false;
 
 
@@ -32,7 +32,7 @@ class TanTank {
 		this.noiseDelay = 0;
 		this.noiseAmount = 0.2;
 		this.turretRotation = 180 * deltaTime * Math.PI / 180;
-		this.shellDelay = 0.4;
+		this.shellDelay = 0.1;
 		this.shellShot = 0;
 	}
 
