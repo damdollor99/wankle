@@ -201,7 +201,7 @@ class Player {
 		//delay shell fire rate && cap shell amount && isn't dead
 		if (this.shellDelay > 0 && this.shellShot < 15 && !this.dead && !INTERMISSION) {
 			this.tankShock = -0;
-			this.shellShot++;
+			this.shellShot--;
 			this.shellDelay = 0;
 
 			this.tank.shoot(MOUSE_POS, NORMAL_SHELL, this.tankID);		
@@ -209,9 +209,9 @@ class Player {
 	}
 
 	layMine() {
-		if (this.mineLayed < 5 && this.mineDelay > 10 && !INTERMISSION) {
+		if (this.mineLayed < 5 && this.mineDelay > 0 && !INTERMISSION) {
 			this.tankShock = -0;
-			this.mineLayed++;
+			this.mineLayed--;
 			this.mineDelay = 0;
 
 			this.tank.layMine(this.tankID);
