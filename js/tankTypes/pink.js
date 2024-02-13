@@ -5,7 +5,7 @@ class PinkTank {
 
 		this.tankType = PINK_TANK;
 		this.tank = new Tank(x, y, angle, turretAngle, "#B82A55", "#B02951", "#B0896B", 120, 1, this.tankID, this.tankType);
-		this.bounces = 1;
+		this.bounces = 5;
 		this.dead = false;
 
 
@@ -32,7 +32,7 @@ class PinkTank {
 		this.noiseDelay = 0;
 		this.noiseAmount = 0.2;
 		this.turretRotation = 150 * deltaTime * Math.PI / 180;
-		this.shellDelay = 0.4;
+		this.shellDelay = 0.1;
 		this.shellShot = 0;
 	}
 
