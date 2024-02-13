@@ -5,7 +5,7 @@ class BlurpleTank {
 		
 		this.tankType = BLURPLE_TANK;
 		this.tank = new Tank(x, y, angle, turretAngle, "#7481F7", "#6A76E3", "#B0896B", 150, 1, this.tankID, this.tankType);
-		this.bounces = 1;
+		this.bounces = 5;
 		this.dead = false;
 
 
@@ -32,7 +32,7 @@ class BlurpleTank {
 		this.noiseDelay = 0;
 		this.noiseAmount = 0.2;
 		this.turretRotation = 150 * deltaTime * Math.PI / 180;
-		this.shellDelay = 0.4;
+		this.shellDelay = 0.1;
 		this.shellShot = 0;
 	}
 
