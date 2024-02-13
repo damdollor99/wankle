@@ -5,7 +5,7 @@ class GreenTank {
 
 		this.tankType = GREEN_TANK;
 		this.tank = new Tank(x, y, angle, turretAngle, "#3AB02E", "#37A62B", "#B0896B", 0, 0, this.tankID, this.tankType);
-		this.bounces = 2;
+		this.bounces = 10;
 		this.dead = false;
 
 		this.shellDetectionRadius = 100;
