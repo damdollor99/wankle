@@ -65,7 +65,7 @@ class Player {
 		this.mineLayed = 0;
 
 		//delays mine spamming
-		this.mineDelay = 0;
+		this.mineDelay = 0.1;
 
 		this.keys = {};
 
