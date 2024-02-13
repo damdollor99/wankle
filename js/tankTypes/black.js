@@ -5,7 +5,7 @@ class BlackTank {
 
 		this.tankType = BLACK_TANK;
 		this.tank = new Tank(x, y, angle, turretAngle, "#000000", "#000000", "#B0896B", 260, 1, this.tankID, this.tankType);
-		this.bounces = 0;
+		this.bounces = 5;
 		this.dead = false;
 
 		//movement update
@@ -29,7 +29,7 @@ class BlackTank {
 		//(60 * deltaTime) == 1 deg
 		this.lockedOn = false;
 		this.turretRotation = 500 * deltaTime * Math.PI / 180;
-		this.shellDelay = 1;
+		this.shellDelay = 0.5;
 	}
 
 	//cast a ray to player
