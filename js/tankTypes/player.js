@@ -204,10 +204,7 @@ class Player {
 			this.shellShot--;
 			this.shellDelay = 0;
 
-			this.tank.shoot(MOUSE_POS, NORMAL_SHELL, this.tankID);		
-		if (this.keys[69]) {
 			this.tank.shoot(MOUSE_POS, NORMAL_SHELL, this.tankID);
-		}
 		}
 	}
 
