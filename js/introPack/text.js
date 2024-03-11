@@ -5,11 +5,11 @@ const moveTextTwo = "Rotate your tank left with 'A' and rotate your tank right w
 const moveTextThree = "Arrow keys can also be used in this manner.";
 
 const shootTextOne = "Shoot by left or right clicking.";
-const shootTextTwo = "Shoot up to 5 shells at a time.";
+const shootTextTwo = "Shoot up to any amount of shells at a time.";
 const shootTextThree = "Your shells ricochet once.";
 
 const mineTextOne = "Lay a mine by pressing space.";
-const mineTextTwo = "You can lay up to 2 mines.";
+const mineTextTwo = "You can lay up to infinity mines.";
 const mineTextThree = "You can shoot a mine to detonate.";
 
 const addTextOne = "For additional information and credits click on the button";
