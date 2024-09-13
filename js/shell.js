@@ -517,7 +517,7 @@ class Shell {
 				//COLLISIONS
 				this.shellWithShell();
 				this.shellWithMine();
-				this.shellWithPlayer();
+				//this.shellWithPlayer();
 				this.shellWithEnemy();
 				this.shellWithTile();
 
@@ -536,7 +536,7 @@ class Shell {
 				}
 
 				//MARK SHELL TO DELETE
-				if (this.speed == NORMAL_SHELL && this.ricochet >= 2) {
+				if (this.speed == NORMAL_SHELL && this.ricochet >= 10) {
 					this.makeHitParticles();
 					this.diminish = true;
 				}
