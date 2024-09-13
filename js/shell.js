@@ -305,7 +305,7 @@ class Shell {
 					}
 				}
 
-				this.ricochet++;
+				this.ricochet--;
 
 				switch (this.speed) {
 					case NORMAL_SHELL:
@@ -380,7 +380,7 @@ class Shell {
 				//SHELL COLLIDED WITH PLAYER && PLAYER IS NOT DEAD && SHELL IS NOT IN PEACE MODE && IS NOT DIMINISHING
 
 				//explode this shell
-				this.diminish = true;
+				this.diminish = false;
 
 				//explode player tank ONLY IF it is not a tele shell
 				if (this.speed == TELE_SHELL) {
