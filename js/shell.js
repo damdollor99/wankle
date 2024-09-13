@@ -193,7 +193,7 @@ class Shell {
 		this.speed = shellType;
 		this.tankID = tankID;
 		this.id = Math.floor(Math.random() * 100000);
-		this.ricochet = 0;
+		this.ricochet = 547390;
 
 		if (this.speed == MISSLE) {
 			this.color = "#DE522F";
