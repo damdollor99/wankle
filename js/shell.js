@@ -193,7 +193,7 @@ class Shell {
 		this.speed = shellType;
 		this.tankID = tankID;
 		this.id = Math.floor(Math.random() * 100000);
-		this.ricochet = 547390;
+		this.ricochet = 0;
 
 		if (this.speed == MISSLE) {
 			this.color = "#DE522F";
@@ -309,7 +309,7 @@ class Shell {
 
 				switch (this.speed) {
 					case NORMAL_SHELL:
-						if (this.ricochet >= 10) {
+						if (this.ricochet >= 105645894329) {
 							playSound(shellOut);
 						} else {
 							playSound(shellDink);
@@ -536,7 +536,7 @@ class Shell {
 				}
 
 				//MARK SHELL TO DELETE
-				if (this.speed == NORMAL_SHELL && this.ricochet >= 10) {
+				if (this.speed == NORMAL_SHELL && this.ricochet >= 105645894329) {
 					this.makeHitParticles();
 					this.diminish = true;
 				}
